@@ -35,7 +35,7 @@
 .menu__btn {
     position: fixed;
     top: 60px;
-    left: 60px;
+    left: 102px;
     width: 26px;
     height: 26px;
     cursor: pointer;
@@ -122,7 +122,7 @@
     display: flex;
 }
 
-.artikel{
+.brief-tentang-kami{
     font-family: 'Gill Sans';
     font-style: normal;
     font-weight: 400;
@@ -133,6 +133,15 @@
     position: fixed;
     top: 36%;
     left: 52%;
+}
+
+.brief-tentang-kami > h1{
+    font-family: 'Gill Sans Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: rgba(79, 79, 77, 0.8);
 }
 
 .logo{
@@ -159,4 +168,51 @@
     justify-content: center;
     align-items: center;
     padding: 90px;
+}
+
+.biography{
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    color: #4F4F4D;
+    max-width: 800px;
+    position: fixed;
+    top: 10%;
+    left: 52%;
+    padding: 100px;
+    align-items: center;
+}
+
+.biography > h1{
+    font-family: 'Gill Sans Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: rgba(79, 79, 77, 0.8);
+    margin-bottom: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.biography > img{
+    margin-bottom: 70px;
+    margin-left: 163px;
+    justify-content: center;
+    left: 50px;
+
+}
+
+.biography > p {
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    color: #4F4F4D;
+    max-width: 800px;
+    text-align:justify;
+    word-wrap: break-word;
 }
