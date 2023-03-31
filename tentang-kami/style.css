@@ -45,7 +45,6 @@
     display: block;
     position: absolute;
     width: 50%;
-    
     height: 2px;
     background-color: #616161;
     transition-duration: .25s;
