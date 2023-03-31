@@ -1,0 +1,532 @@
+@keyframes square-animation {
+    0% {
+        left: 0;
+        top: 0;
+    }
+
+    10.5% {
+        left: 0;
+        top: 0;
+    }
+
+    12.5% {
+        left: 32px;
+        top: 0;
+    }
+
+    23% {
+        left: 32px;
+        top: 0;
+    }
+
+    25% {
+        left: 64px;
+        top: 0;
+    }
+
+    35.5% {
+        left: 64px;
+        top: 0;
+    }
+
+    37.5% {
+        left: 64px;
+        top: 32px;
+    }
+
+    48% {
+        left: 64px;
+        top: 32px;
+    }
+
+    50% {
+        left: 32px;
+        top: 32px;
+    }
+
+    60.5% {
+        left: 32px;
+        top: 32px;
+    }
+
+    62.5% {
+        left: 32px;
+        top: 64px;
+    }
+
+    73% {
+        left: 32px;
+        top: 64px;
+    }
+
+    75% {
+        left: 0;
+        top: 64px;
+    }
+
+    85.5% {
+        left: 0;
+        top: 64px;
+    }
+
+    87.5% {
+        left: 0;
+        top: 32px;
+    }
+
+    98% {
+        left: 0;
+        top: 32px;
+    }
+
+    100% {
+        left: 0;
+        top: 0;
+    }
+}
+
+@font-face {
+    font-family: 'Gill Sans';
+    src: url(font/GillSans/Gill\ Sans.otf);
+}
+
+@font-face {
+    font-family: 'Gill Sans Bold';
+    src: url(font/GillSans/Gill\ Sans\ Bold.otf);
+}
+
+body {
+    font-family: 'Gill Sans';
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: auto;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('asset/Background.svg');
+}
+
+.loader-screen {
+    display: flex;
+    height: 850px;
+    align-items: center;
+    justify-content: center;
+    /* visibility: hidden; */
+}
+
+.preloader {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    transition: opacity 3s, visibility 2s;
+}
+
+.preloader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+
+.title-loader {
+    display: flex;
+    justify-content: center;
+}
+
+h6 {
+    color: #fff;
+}
+
+
+.loader {
+    position: relative;
+    width: 96px;
+    height: 96px;
+    transform: rotate(45deg);
+}
+
+.loader-square {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    margin: 2px;
+    border-radius: 0px;
+    background: rgb(112, 1, 1);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    animation: square-animation 10s ease-in-out infinite both;
+}
+
+.loader-square:nth-of-type(0) {
+    animation-delay: 0s;
+}
+
+.loader-square:nth-of-type(1) {
+    animation-delay: -1.4285714286s;
+}
+
+.loader-square:nth-of-type(2) {
+    animation-delay: -2.8571428571s;
+}
+
+.loader-square:nth-of-type(3) {
+    animation-delay: -4.2857142857s;
+}
+
+.loader-square:nth-of-type(4) {
+    animation-delay: -5.7142857143s;
+}
+
+.loader-square:nth-of-type(5) {
+    animation-delay: -7.1428571429s;
+}
+
+.loader-square:nth-of-type(6) {
+    animation-delay: -8.5714285714s;
+}
+
+.loader-square:nth-of-type(7) {
+    animation-delay: -10s;
+}
+
+/* Hamburger */
+
+.hamburger-menu{
+    position: fixed;
+    top: 50px;
+    left: 50px;
+}
+
+.burger {
+    z-index: 1000;
+    position: relative;
+    width: 40px;
+    height: 30px;
+    background: transparent;
+    cursor: pointer;
+    display: block;
+}
+
+#burger {
+    z-index: 1000;
+    display: none;
+}
+
+.burger span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: black;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+    top: 0px;
+    transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+    left: 15%;
+    top: 50%;
+    width: 70%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+    top: 100%;
+    transform-origin: left center;
+    transform: translateY(-100%);
+}
+
+#burger:checked~.burger span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 0px;
+    left: 5px;
+}
+
+#burger:checked~.burger span:nth-of-type(2) {
+    width: 0%;
+    opacity: 0;
+}
+
+#burger:checked~.burger span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 28px;
+    left: 5px;
+}
+
+#burger:checked~.sidebar-menu {
+    left: 0;
+}
+
+
+/* end of hamburger */
+
+/* Side bar menu */
+
+.sidebar-menu{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: -270px;
+    height: 100%;
+    width: 270px;
+    transition: all 0.25s;
+    background-color: #fff;
+}
+
+.sidebar-menu h4{
+    line-height: 50px;
+}
+
+.sidebar-menu a{
+    font-weight: 500px;
+    color: #343434;
+    text-decoration: none;
+}
+
+
+.sidebar-menu a:hover{
+    color: #7d6565;
+}
+/* end of sidebar */
+.content {
+    background-color: #fff;
+}
+
+
+.wave-group {
+    margin: 20px 20px;
+    position: relative;
+}
+
+.wave-group .input {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 390px;
+    border: none;
+    border-bottom: 1px solid #515151;
+    background: transparent;
+}
+
+.wave-group .input:focus {
+    outline: none;
+}
+
+.wave-group .label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    display: flex;
+}
+
+.wave-group .label-char {
+    transition: 0.2s ease all;
+    transition-delay: calc(var(--index) * .05s);
+}
+
+.wave-group .input:focus~label .label-char,
+.wave-group .input:valid~label .label-char {
+    transform: translateY(-20px);
+    font-size: 14px;
+    color: #DFDAD7;
+}
+
+.wave-group .bar {
+    position: relative;
+    display: block;
+    width: 390px;
+}
+
+.wave-group .bar:before,
+.wave-group .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #DFDAD7;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.wave-group .bar:before {
+    left: 50%;
+}
+
+.wave-group .bar:after {
+    right: 50%;
+}
+
+.wave-group .input:focus~.bar:before,
+.wave-group .input:focus~.bar:after {
+    width: 50%;
+}
+
+
+
+.content {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    width: 1200px;
+    height: 100vh;
+}
+
+#content {
+    height: 100vh;
+}
+
+/* check boxes */
+/* Hide the default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 20px;
+}
+
+.container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #343434;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked~.checkmark {
+    background-color: #f0f0f0;
+    border: 2px solid #343434;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    filter: drop-shadow(0 0 10px #888);
+}
+
+/* Show the checkmark when checked */
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 0.3em;
+    top: 0.05em;
+    width: 0.3em;
+    height: 0.65em;
+    border: solid #343434;
+    border-width: 0 0.2em 0.2em 0;
+    border-radius: 4px;
+    transform: rotate(45deg);
+    animation: bounceFadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@keyframes bounceFadeIn {
+    from {
+        transform: translate(0, -10px) rotate(45deg);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(0, 0) rotate(45deg);
+        opacity: 1;
+    }
+}
+
+
+
+/* end of checkbox */
+
+/* button */
+.btn {
+    width: 6.5em;
+    height: 2.3em;
+    margin: 20px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+button:hover {
+    color: black;
+}
+
+button:after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+}
+
+button:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+/* end of button */
+
+.wrap-remember-me {
+    width: 20px;
+}
+
+.wrap-remember-me .row {
+    width: 450px;
+}
+
+.wrap-login {
+    width: 500px;
+}
