@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>Add To Chart</title>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <div class="add-to-chart">
+        <div class="nav">
+            <div class="navright">
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <img src="./img/BurgerMenu.png" alt="BM">
+                    </label>
+                    <ul class="menu__box" style="text-align: center;">
+                      <li><a class="menu__item" text-center="#">TENTANG KAMI</a></li>
+                      <li><a class="menu__item" href="#">KOPIPEDIA</a></li>
+                      <li><a class="menu__item" href="#">EZ PZ KOPI</a></li>
+                      <li><a class="menu__item" href="#">KONTAK</a></li>
+                      <li><a class="menu__item" href="#">KERANJANG</a></li>
+                      <li><a class="menu__item" href="#">AKUN SAYA</a></li>
+                    </ul>
+                </div>
+                <div class="keranjang">
+                    <a class="btn">
+                        <img src="./img/keranjang.png" alt="keranjang">
+                    </a>
+                </div>
+                <div class="subsection">
+                    <h2>EZ PZ KOPI</h2>
+                </div>
+                <div class="arrow">
+                    <img src="./img/arrow.png" alt="arrow">
+                </div>
+                <div class="subsubsection">Kopi Gula Aren</div>
+            </div>
+        </div>
+        <div class="choose-menu">
+            <div class="choose-menu-right">
+                <div class="foto-menu">
+                    <img src="./img/KopiGulaAren.png" alt="">
+                </div>
+            </div>
+            <div class="choose-menu-left">
+                <div class="menu">
+                    <h2>Kopi Gula Aren</h2>
+                    <h3>Rp 18.000</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo accusamus consequatur placeat vero necessitatibus. Quia minus esse provident doloribus ullam in perspiciatis laboriosam, ipsum voluptates est hic, culpa vel modi.</p>
+                    <div class="sesuaikan-kopi">
+                        <h2>Sesuaikan Kopimu</h2>
+                        <div class="box">
+                            <h2>Beans</h2>
+                        </div>
+                        <div class="beans-checkbox">
+                            <div class="checkbox-left">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="menu1">
+                                    <label class="form-check-label" for="menu1">Robusta</label>
+                                </div>
+                            </div>
+                            <div class="checkbox-right">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="menu2">
+                                    <label class="form-check-label" for="menu2">Arabica</label>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="box">
+                            <h2>Beans</h2>
+                        </div>
+                        <div class="beans-checkbox">
+                            <div class="checkbox-left">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="menu3">
+                                    <label class="form-check-label" for="menu3">Reguler</label>
+                                </div>
+                            </div>
+                            <div class="checkbox-right">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="menu4">
+                                    <label class="form-check-label" for="menu4">Large</label>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="bottomchart">
+                        <div class="quantity">
+                            <div class="judul">
+                                <h2>Quantity</h2>
+                            </div>
+                            <div class="input-group quantity">
+                                <div class="input-group-prepend">
+                                  <button class="btn btn-outline-secondary btn-minus" type="button">-</button>
+                                </div>
+                                <input type="text" class="form-control" value="1">
+                                <div class="input-group-append">
+                                  <button class="btn btn-outline-secondary btn-plus" type="button">+</button>
+                                </div>
+                            </div> 
+                            <div class="add-to-cart-button">
+                                <button class="button-add-to">Add to Cart</button>
+                              </div>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
