@@ -21,3 +21,4 @@ $(document).ready(function(){
       $('input[name="quantity"]').val(value);
   });
 });
+
