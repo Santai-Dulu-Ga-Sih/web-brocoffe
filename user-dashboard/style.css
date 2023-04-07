@@ -3,6 +3,11 @@
     src: url(font/GillSans/Gill\ Sans.otf);
 }
 
+@font-face {
+    font-family: 'Gill Sans Bold';
+    src: url(font/GillSans/Gill\ Sans\ Bold.otf);
+}
+
 .dashboard{
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("./img/Worlds-Best-Minimalist-Cafe-Designs-—-OMOTESANDO-COFFEEE-MAMEYA-HONG-KONG-1200x800.jpg") no-repeat center center fixed;
     background-size: cover;
@@ -21,6 +26,7 @@
     width: 65%;
     height: 100%;
     background-color: white;
+    display: flex;
 }
 
 #menu__toggle {
@@ -111,8 +117,8 @@
 }
 
 @font-face {
-    font-family: 'Gill Sans Bold';
-    src: url(font/GillSans/Gill\ Sans\ Bold.otf);
+    font-family: 'Gill Sans Medium';
+    src: url(font\GillSans\Gill\_Sans\Medium\_Italic.otf);
 }
 
 .content{
@@ -124,9 +130,9 @@
 .brief-tentang-kami{
     font-family: 'Gill Sans';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 20;
     font-size: 25px;
-    line-height: 29px;
+    line-height: 0px;
     color: #4F4F4D;
     max-width: 800px;
     position: fixed;
@@ -216,19 +222,83 @@
     word-wrap: break-word;
 }
 
-ul {
-    list-style-type: none;
-    text-align: left;
-}
 
-a {
+.dash-menu-item {
     color: #4F4F4D;
     text-decoration: none;
     font-family: 'Gill Sans';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 20px;
     line-height: 24px;
-    color: #4F4F4D;
     text-align: right;
+    letter-spacing: 0.1em;
+}
+
+.dash-menu{
+    width: 20%;
+    height: 100%;
+    padding-top: 50px;
+    text-align: center;
+    display: inline-block;
+}
+
+.dash-menu > ul {
+    top: 15%;
+    position: absolute;
+    line-height: 1cm;
+    list-style-type: none;
+    text-align: left;
+}
+
+.dash-menu-item:hover{
+    font-weight: 700;
+    color:#4F4F4D ;
+}
+
+.dash-menu-item.active{
+    font-weight: 700;
+}
+
+.dash-content{
+    width: 80%;
+    height: 100%;
+    left: 50%;
+    top:15%;
+    text-align: left;
+    position:absolute;
+}
+
+.dash-content > h1{
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.1em;
+    color: #4F4F4D;
+    
+}
+
+.dash-content-par > p{
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: #4F4F4D;
+    inline-size: 50%;
+    overflow-wrap: break-word;
+}
+
+.dash-content-title{
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.1em;
+    color: #4F4F4D;
+    padding-bottom: 20px;
 }
