@@ -1,0 +1,234 @@
+@font-face {
+    font-family: 'Gill Sans';
+    src: url(font/GillSans/Gill\ Sans.otf);
+}
+
+.dashboard{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("./img/Worlds-Best-Minimalist-Cafe-Designs-—-OMOTESANDO-COFFEEE-MAMEYA-HONG-KONG-1200x800.jpg") no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.left{
+    width: 35%;
+    height: 100%;
+}
+
+.right{
+    width: 65%;
+    height: 100%;
+    background-color: white;
+}
+
+#menu__toggle {
+    opacity: 0;
+  }
+  
+#menu__toggle:checked ~ .menu__box {
+    left: 0 !important;
+  }
+
+  
+.menu__btn {
+    position: fixed;
+    top: 60px;
+    left: 102px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+.menu__btn > span {
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: #616161;
+    transition-duration: .25s;
+}
+  
+.menu__btn > span::before {
+    content: '';
+    top: -8px;
+    right: -4px;
+    width: 150%;
+    display: block;
+    position: absolute;
+    height: 2px;
+    background-color: #616161;
+    transition-duration: .25s;
+}
+  
+.menu__btn > span::after {
+    content: '';
+    top: 8px;
+    width: 150%;
+    right: -5px;
+    display: block;
+    position: absolute;
+    height: 2px;
+    background-color: #616161;
+    transition-duration: .25s;
+}
+  
+.menu__box {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 250px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #FFFF;
+    transition-duration: .25s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.menu__box.show{
+    display: block;
+}
+
+.menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #000000;
+    font-family:'Gill Sans';
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    transition-duration: .25s;
+}
+  
+.menu__item:hover {
+    background-color: #FFFF;
+}
+
+@font-face {
+    font-family: 'Gill Sans Bold';
+    src: url(font/GillSans/Gill\ Sans\ Bold.otf);
+}
+
+.content{
+    width: 100%;
+    position:fixed;
+    display: flex;
+}
+
+.brief-tentang-kami{
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    color: #4F4F4D;
+    max-width: 800px;
+    position: fixed;
+    top: 36%;
+    left: 52%;
+}
+
+.brief-tentang-kami > h1{
+    font-family: 'Gill Sans Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: rgba(79, 79, 77, 0.8);
+}
+
+.logo{
+    padding: 65px;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    font-family: 'Gill Sans Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #4F4F4D;
+}
+
+.numbering{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 90px;
+}
+
+.biography{
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    color: #4F4F4D;
+    max-width: 800px;
+    position: fixed;
+    top: 10%;
+    left: 52%;
+    padding: 100px;
+    align-items: center;
+}
+
+.biography > h1{
+    font-family: 'Gill Sans Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: rgba(79, 79, 77, 0.8);
+    margin-bottom: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.biography > img{
+    margin-bottom: 70px;
+    margin-left: 163px;
+    justify-content: center;
+    left: 50px;
+
+}
+
+.biography > p {
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    color: #4F4F4D;
+    max-width: 800px;
+    text-align:justify;
+    word-wrap: break-word;
+}
+
+ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+a {
+    color: #4F4F4D;
+    text-decoration: none;
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #4F4F4D;
+    text-align: right;
+}
