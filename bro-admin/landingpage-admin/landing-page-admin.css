@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'Gill Sans';
+    src: url(font/GillSans/Gill\ Sans.otf);
+}
+
+@font-face {
+    font-family: 'Gill Sans Bold';
+    src: url(font/GillSans/Gill\ Sans\ Bold.otf);
+}
+
+/* Loader screen */
+.loader-screen {
+    display: flex;
+    height: 850px;
+    align-items: center;
+    justify-content: center;
+    /* visibility: hidden; */
+}
+
+.preloader {
+    z-index: 3000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    transition: opacity 1s ease-out, visibility 1s;
+}
+
+.preloader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.hidden {
+    visibility: hidden;
+}
+/* end of loader screen */
+body {
+    justify-content: center;
+    display: flex;
+    font-family: 'Gill Sans';
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: auto;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('asset/Background.svg');
+}
+
+.menu{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    left: 40%;
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 370px;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.menu ul {
+    text-align: center;
+}
+
+.menu h5{
+    line-height: 50px;
+}
+
+.menu a{
+    color:black;
+    text-decoration: none;
+}
+
+.menu h3{
+    font-weight: bolder;
+    font-family: 'Gill MT';
+}
+
+.pop-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 98%;
+    z-index: -9999;
+    position: absolute;
+    width: 450px;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.pop-menu p{
+    line-height: 40px;
+}
+
+
+a:hover{
+    color: black;
+}
+
+a:hover~.pop-menu {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+p{
+    opacity: 0;
+}
+
+a.tentang-kami:hover~.pop-menu p.text-1{
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+a.kopipedia:hover~.pop-menu p.text-2{
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+a.ezpz-kopi:hover~.pop-menu p.text-3{
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+a.kontak:hover~.pop-menu p.text-4{
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+a.keranjang:hover~.pop-menu p.text-5{
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+a.akun-saya:hover~.pop-menu p.text-6{
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}

@@ -1,24 +1,14 @@
-$(document).ready(function(){
-  // saat tombol plus di klik
-  $('.btn-plus').click(function(){
-      // ambil nilai input
-      var value = parseInt($('input[name="quantity"]').val());
-      // tambahkan 1 ke nilai input
-      value = isNaN(value) ? 0 : value;
-      value++;
-      $('input[name="quantity"]').val(value);
-  });
-  
-  // saat tombol minus di klik
-  $('.btn-minus').click(function(){
-      // ambil nilai input
-      var value = parseInt($('input[name="quantity"]').val());
-      // kurangi 1 dari nilai input
-      value = isNaN(value) ? 0 : value;
-      if(value > 1){
-          value--;
-      }
-      $('input[name="quantity"]').val(value);
-  });
-});
+const checkbox = document.querySelector("#menu__toggle");
+const menusc = document.querySelector("#menusection");
 
+menusc.addEventListener("click", function(event) {
+  // Check if the clicked element is the burger menu or its label
+  const isBurgerMenu = event.target.matches(".menu__btn") || event.target.matches(".menu__btn img");
+  // Check if the clicked element is inside the menu box
+  const isInsideMenuBox = event.target.closest(".menu__box");
+
+  if (!isBurgerMenu && !isInsideMenuBox) {
+    // Close menu box if the click is outside of the box
+    checkbox.checked = false;
+  }
+});
