@@ -89,6 +89,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 10;
   }
 
 .menu__box.show{
@@ -109,7 +110,6 @@
 .menu__item:hover {
     background-color: #FFFF;
 }
-
 @font-face {
     font-family: 'Gill Sans Bold';
     src: url(font/GillSans/Gill\ Sans\ Bold.otf);
