@@ -127,102 +127,6 @@
     display: flex;
 }
 
-.brief-tentang-kami{
-    font-family: 'Gill Sans';
-    font-style: normal;
-    font-weight: 20;
-    font-size: 25px;
-    line-height: 0px;
-    color: #4F4F4D;
-    max-width: 800px;
-    position: fixed;
-    top: 36%;
-    left: 52%;
-}
-
-.brief-tentang-kami > h1{
-    font-family: 'Gill Sans Bold';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 38px;
-    color: rgba(79, 79, 77, 0.8);
-}
-
-.logo{
-    padding: 65px;
-    position: fixed;
-    text-align: center;
-    top: 50%;
-    left: 44%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    font-family: 'Gill Sans Bold';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 48px;
-    color: #4F4F4D;
-}
-
-.numbering{
-    position: relative;
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 90px;
-}
-
-.biography{
-    font-family: 'Gill Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 29px;
-    color: #4F4F4D;
-    max-width: 800px;
-    position: fixed;
-    top: 10%;
-    left: 52%;
-    padding: 100px;
-    align-items: center;
-}
-
-.biography > h1{
-    font-family: 'Gill Sans Bold';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 38px;
-    color: rgba(79, 79, 77, 0.8);
-    margin-bottom: 20px;
-    text-align: center;
-    justify-content: center;
-}
-
-.biography > img{
-    margin-bottom: 70px;
-    margin-left: 163px;
-    justify-content: center;
-    left: 50px;
-
-}
-
-.biography > p {
-    font-family: 'Gill Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 29px;
-    color: #4F4F4D;
-    max-width: 800px;
-    text-align:justify;
-    word-wrap: break-word;
-}
-
-
 .dash-menu-item {
     color: #4F4F4D;
     text-decoration: none;
@@ -236,7 +140,7 @@
 }
 
 .dash-menu{
-    width: 20%;
+    width: 25%;
     height: 100%;
     padding-top: 50px;
     text-align: center;
@@ -261,15 +165,18 @@
 }
 
 .dash-content{
-    width: 80%;
+    width: 50%;
     height: 100%;
-    left: 50%;
-    top:15%;
+    left: 52%;
     text-align: left;
     position:absolute;
 }
 
-.dash-content > h1{
+.dash-content-title{
+    display: flex;
+    height: 20%;
+}
+.dash-content-title > h1{
     font-family: 'Gill Sans';
     font-style: normal;
     font-weight: 400;
@@ -277,7 +184,10 @@
     line-height: 48px;
     letter-spacing: 0.1em;
     color: #4F4F4D;
-    
+    top: 50%;
+    position: absolute;
+    top: 17%;
+    margin-top: -25px;
 }
 
 .dash-content-par > p{
@@ -292,13 +202,119 @@
     overflow-wrap: break-word;
 }
 
-.dash-content-title{
+.dash-content-order-wrap{
+    display: flex;
+    height: 20%;
+    width: 50%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+.thorder{
+    padding: 12px;
+    text-align: center;
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: #4F4F4D;
+
+}
+.tdorder {
     font-family: 'Gill Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 20px;
+    line-height: 24px;
     letter-spacing: 0.1em;
     color: #4F4F4D;
-    padding-bottom: 20px;
+    padding: 12px;
+    text-align: center;
 }
+  
+thead tr th {
+    font-weight: bold;
+}
+  
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #4F4F4D;
+    border-radius: 10px;
+    justify-content: end;
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    float: right;
+    width: 183px;
+    height: 40px;
+}
+
+.form-wrapper {
+    max-width: 600px;
+    padding-top: 10px;
+  }
+  
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+  
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+.form-input {
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 1.2rem;
+    background: transparent;
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 14px;
+    letter-spacing: 0.1em;
+    color: #000000;
+  }
+
+.form-group > label{
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: #4F4F4D;
+}
+  
+#edit-btn {
+    display: block;
+    margin-left: auto;
+    padding: 0.5rem 1.5rem;
+    background: #4F4F4D;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
